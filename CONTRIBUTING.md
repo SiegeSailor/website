@@ -146,7 +146,7 @@ Run the static client build and Terraform workflow locally:
 (cd docker-context && npm run build:static)
 
 (cd infrastructure/static-production/
-export TF_VAR_github_oauth_token="<token>"
+export TF_VAR_github_oauth_token="$(gh auth token)"
 terraform init
 terraform fmt
 tflint
