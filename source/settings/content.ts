@@ -5,7 +5,7 @@
 // Contact details are deliberately absent. The phone number and postal area
 // belong to the résumé document only and must never reach a public page.
 //
-// Mirrors profile/ at SiegeSailor/SiegeSailor@cbb86ad (2026-10-03).
+// Mirrors profile/ at SiegeSailor/SiegeSailor@b9d5b32 (2026-10-18).
 
 export type TMedia = { key: string; label: string; href: string };
 export type TIdentity = { legal: string; display: string };
@@ -95,86 +95,58 @@ const PROJECTS: TProject[] = [
   {
     title: "Jin Yu Zhang's Website",
     stage: "Production",
-    href: "https://github.com/SiegeSailor/Website",
+    href: "https://github.com/SiegeSailor/website",
     description:
       "This site — a statically exported *Next.js* application served from *AWS S3* behind *CloudFront*, with markdown-driven posts, in-site search, and a single-source résumé build system. Built with *TailwindCSS*, *HeroUI*, the *UnifiedJS* ecosystem, *Mermaid*, and *Zustand*.",
   },
   {
     title: "Terminal Sigma",
     stage: "Production",
-    href: "https://github.com/SiegeSailor/Terminal-Sigma",
+    href: "https://github.com/SiegeSailor/terminal-sigma",
     description:
       "Available on `npm` and as a desktop app, a *TypeScript* terminal dashboard that gives game-style feedback on self-development: a pixel-art character levels up alongside a Pomodoro timer, diet and workout trackers, and everyday quotes, in English and Traditional Chinese. Built with *React*, *Ink*, *Zod*, *Electron*, and *xterm.js*.",
   },
   {
     title: "Smarty Notebook Collection",
     stage: "Production",
-    href: "https://github.com/SiegeSailor/Smarty-Notebook-Collection",
+    href: "https://github.com/SiegeSailor/notebook-smarty",
     description:
       "A collection of self-contained *Jupyter* notebooks that run batch requests against the **Smarty** Cloud API, such as fetching U.S. ZIP+4 codes by address. Built with *Python*, *pandas*, *Requests*, and *Poetry*.",
   },
   {
     title: "Cryptography CLI",
     stage: "Development",
-    href: "https://github.com/SiegeSailor/Cryptography",
+    href: "https://github.com/SiegeSailor/library-cryptography",
     description:
       "Available on `npm`, a *TypeScript* package with *WebAssembly* enabled that provides a collection of cryptography functions and a command-line tool with interactive prompts to demonstrate key encryption flows and algorithms.",
   },
   {
-    title: "Self-Development Assistant",
-    stage: "Planning",
-    href: "https://github.com/SiegeSailor",
-    description:
-      "An *iOS* application built with *Godot* that comes with often-used self-development and assistance features, such as the tomato timer, diet tracking, goals-oriented schedules, and everyday-motivating quotes, to help users build confidence and assertiveness.",
-  },
-  {
-    title: "AI-Driven Development Tools Integration",
-    stage: "Planning",
-    href: "https://github.com/SiegeSailor",
-    description:
-      "*macOS*-specific desktop integration of AI-driven development tools for automating workflows with *MCPs* and *Agents*, including onboarding environment setup, credential management, **Slack** and **GitLab** integration, image, icon, and sprite sheet generation, and **Gmail** and *Webhooks* triggers.",
-  },
-  {
     title: "Concurrency Toolkit",
     stage: "Planning",
-    href: "https://github.com/SiegeSailor",
+    href: "https://github.com/SiegeSailor/library-concurrency-toolkit",
     description:
       "Available on `pip`, a *Python* concurrent class wrapper for managing multiple tasks with error handling and logging. Based on `asyncio`. This is a go-to solution for simplified asynchronous programming with easy-to-use abstractions.",
   },
   {
     title: "Account Management CBWMs",
     stage: "Planning",
-    href: "https://github.com/SiegeSailor/OpenSource.AccountHub",
+    href: "https://github.com/SiegeSailor/service-account-hub",
     description:
       "Scalable *OWASP*-Complied Cloud-Based Microservice that allows users to manage their accounts and settings. It provides an event-driven architecture comes with a eventual consistency model and various communication protocols for different use cases and CBWMs.",
   },
   {
     title: "Configurable Bucket CBWM Boilerplate",
     stage: "Planning",
-    href: "https://github.com/SiegeSailor/OpenSource.Bucket",
+    href: "https://github.com/SiegeSailor/service-bucket",
     description:
       "A project boilerplate that provides a *RESTful* interface for *AWS S3* using *Flask*. Following the microservices principle, this project has been wrapped with *Docker*, *LocalStack*, and *Terraform* to isolate the running/deploying environments with a fully configurable layer that supports development on local laptops, testing in *GitHub Actions* CI/CD pipelines, and deployment to *AWS*.",
   },
   {
     title: "Deployable UI Library Boilerplate",
     stage: "Planning",
-    href: "https://github.com/SiegeSailor",
+    href: "https://github.com/SiegeSailor/template-component-library",
     description:
       "Quick start for deploying *React* components on `npm`. A project boilerplate that provides a set of team-oriented development tools, such as *GitLab CI/CD*, *Semantic Release*, *TypeScript*, *Jest*, *ESLint*, *Stylelint*, and *Ladle*, and best practices.",
-  },
-  {
-    title: "TypeScript Markdown Files Converter",
-    stage: "Planning",
-    href: "https://github.com/SiegeSailor",
-    description:
-      "A *TypeScript* NPM package for parsing markdown files to readable HTML files using *Remark* and parsing folders/files to parsable data structures.",
-  },
-  {
-    title: "AI Story Writer",
-    stage: "Planning",
-    href: "https://github.com/SiegeSailor",
-    description:
-      "A local AI-powered storytelling engine that helps users build interconnected fantasy universes. The system automatically categorizes the inputs, such as races and weapons, and keeps track of them. Built with *Python*, *SQLite*, *Ollama*, *Mistral 7B*, and *Streamlit*.",
   },
 ];
 
