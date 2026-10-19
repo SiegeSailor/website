@@ -31,7 +31,7 @@ Besides the workspace and standard folders, e.g., `.github/` and `.husky/`, the 
 
 The résumé, the GitHub profile README, and the facts behind them live in [`SiegeSailor/SiegeSailor`](https://github.com/SiegeSailor/SiegeSailor), not here. This repository holds only what the website renders, and it renders constants — there is no content loader, no `consumers:` tagging, and nothing fetched at build time but the posts.
 
-When profile facts change there, bring them across with the [`update-website`](./.claude/skills/update-website/SKILL.md) skill rather than editing `settings/content.ts` from memory.
+When profile facts change there, bring them across with SiegeSailor's [`update-website`](https://github.com/SiegeSailor/SiegeSailor/blob/main/.claude/skills/update-website/SKILL.md) skill, run from that repository, rather than editing `settings/content.ts` from memory.
 
 ## Universal Rules
 
@@ -42,4 +42,4 @@ These are rules that hold everywhere. Each is stated in full where it is linked;
 | [`infrastructure/CLAUDE.md`](./infrastructure/CLAUDE.md) | Never apply Terraform without confirmation         |
 | [`source/CLAUDE.md`](./source/CLAUDE.md)                 | Keep everything under `app/` statically exportable |
 
-Commit messages follow the `conventional-commit` skill from [`SiegeSailor/Claude-Plugins`](https://github.com/SiegeSailor/Claude-Plugins), which reads the scope table above.
+Commit messages follow the `conventions:commit` skill from [`SiegeSailor/claude-plugins-marketplace`](https://github.com/SiegeSailor/claude-plugins-marketplace), which reads the scope table above.
