@@ -2,8 +2,8 @@
   "name": "@siegesailor-website/website",
   "version": "1.2.0",
   "description": "SiegeSailor's personal website client application.",
-  "homepage": "https://github.com/SiegeSailor/Website",
-  "bugs": "https://github.com/SiegeSailor/Website/issues",
+  "homepage": "https://github.com/SiegeSailor/website",
+  "bugs": "https://github.com/SiegeSailor/website/issues",
   "private": true,
   "type": "module",
   "browserslist": [
