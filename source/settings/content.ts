@@ -5,7 +5,7 @@
 // Contact details are deliberately absent. The phone number and postal area
 // belong to the résumé document only and must never reach a public page.
 //
-// Mirrors profile/ at SiegeSailor/SiegeSailor@b9d5b32 (2026-10-18).
+// Mirrors profile/ at SiegeSailor/SiegeSailor@b1bb784 (2026-11-01).
 
 export type TMedia = { key: string; label: string; href: string };
 export type TIdentity = { legal: string; display: string };
@@ -114,11 +114,25 @@ const PROJECTS: TProject[] = [
       "A collection of self-contained *Jupyter* notebooks that run batch requests against the **Smarty** Cloud API, such as fetching U.S. ZIP+4 codes by address. Built with *Python*, *pandas*, *Requests*, and *Poetry*.",
   },
   {
+    title: "Bulls and Cows Bot",
+    stage: "Production",
+    href: "https://github.com/SiegeSailor/game-bulls-and-cows",
+    description:
+      "A chat bot that plays Bulls and Cows, the number-guessing game, with `set`, `guess`, `status`, `clear`, and `help` commands and replies in Traditional Chinese, built for *Azure App Service* and **Skype**. Built with *Node.js* and the **Microsoft Bot Framework** SDK.",
+  },
+  {
     title: "Cryptography CLI",
     stage: "Development",
     href: "https://github.com/SiegeSailor/library-cryptography",
     description:
       "Available on `npm`, a *TypeScript* package with *WebAssembly* enabled that provides a collection of cryptography functions and a command-line tool with interactive prompts to demonstrate key encryption flows and algorithms.",
+  },
+  {
+    title: "Site Creator Template",
+    stage: "Development",
+    href: "https://github.com/SiegeSailor/template-site-creator",
+    description:
+      "A *Next.js* template for a Markdown-driven blog and notes site that renders GitHub-flavored Markdown, *KaTeX* math, and *Mermaid* diagrams through the *UnifiedJS* ecosystem, and installs as a PWA. Built with *TypeScript*, *React*, and *Sass*.",
   },
   {
     title: "Concurrency Toolkit",
