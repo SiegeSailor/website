@@ -10,12 +10,17 @@ const REGEX_GITHUB_REPO = /^https?:\/\/github\.com\/([^/]+\/[^/#?]+)/;
 async function fetchVersion(repository: string): Promise<string | null> {
   const api = `https://api.github.com/repos/${repository}`;
   const release = await fetch(`${api}/releases/latest`);
-  if (release.ok) return (await release.json()).tag_name ?? null;
+  if (release.ok) return formatVersion((await release.json()).tag_name);
 
   const tags = await fetch(`${api}/tags?per_page=1`);
-  if (tags.ok) return (await tags.json())[0]?.name ?? null;
+  if (tags.ok) return formatVersion((await tags.json())[0]?.name);
 
   return null;
+}
+
+// Projects tag as "1.2.3" or "v1.2.3"; show both as "v1.2.3", like the README badges.
+function formatVersion(tag: string | undefined): string | null {
+  return tag ? `v${tag.replace(/^v/i, "")}` : null;
 }
 
 export default function ({
