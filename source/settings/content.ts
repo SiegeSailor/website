@@ -5,7 +5,7 @@
 // Contact details are deliberately absent. The phone number and postal area
 // belong to the résumé document only and must never reach a public page.
 //
-// Mirrors profile/ at SiegeSailor/SiegeSailor@b1bb784 (2026-11-01).
+// Mirrors profile/ at SiegeSailor/SiegeSailor@16ccc07 (2026-11-01).
 
 export type TMedia = { key: string; label: string; href: string };
 export type TIdentity = { legal: string; display: string };
@@ -126,41 +126,6 @@ const PROJECTS: TProject[] = [
     href: "https://github.com/SiegeSailor/library-cryptography",
     description:
       "Available on `npm`, a *TypeScript* package with *WebAssembly* enabled that provides a collection of cryptography functions and a command-line tool with interactive prompts to demonstrate key encryption flows and algorithms.",
-  },
-  {
-    title: "Site Creator Template",
-    stage: "Development",
-    href: "https://github.com/SiegeSailor/template-site-creator",
-    description:
-      "A *Next.js* template for a Markdown-driven blog and notes site that renders GitHub-flavored Markdown, *KaTeX* math, and *Mermaid* diagrams through the *UnifiedJS* ecosystem, and installs as a PWA. Built with *TypeScript*, *React*, and *Sass*.",
-  },
-  {
-    title: "Concurrency Toolkit",
-    stage: "Planning",
-    href: "https://github.com/SiegeSailor/library-concurrency-toolkit",
-    description:
-      "Available on `pip`, a *Python* concurrent class wrapper for managing multiple tasks with error handling and logging. Based on `asyncio`. This is a go-to solution for simplified asynchronous programming with easy-to-use abstractions.",
-  },
-  {
-    title: "Account Management CBWMs",
-    stage: "Planning",
-    href: "https://github.com/SiegeSailor/service-account-hub",
-    description:
-      "Scalable *OWASP*-Complied Cloud-Based Microservice that allows users to manage their accounts and settings. It provides an event-driven architecture comes with a eventual consistency model and various communication protocols for different use cases and CBWMs.",
-  },
-  {
-    title: "Configurable Bucket CBWM Boilerplate",
-    stage: "Planning",
-    href: "https://github.com/SiegeSailor/service-bucket",
-    description:
-      "A project boilerplate that provides a *RESTful* interface for *AWS S3* using *Flask*. Following the microservices principle, this project has been wrapped with *Docker*, *LocalStack*, and *Terraform* to isolate the running/deploying environments with a fully configurable layer that supports development on local laptops, testing in *GitHub Actions* CI/CD pipelines, and deployment to *AWS*.",
-  },
-  {
-    title: "Deployable UI Library Boilerplate",
-    stage: "Planning",
-    href: "https://github.com/SiegeSailor/template-component-library",
-    description:
-      "Quick start for deploying *React* components on `npm`. A project boilerplate that provides a set of team-oriented development tools, such as *GitLab CI/CD*, *Semantic Release*, *TypeScript*, *Jest*, *ESLint*, *Stylelint*, and *Ladle*, and best practices.",
   },
 ];
 
